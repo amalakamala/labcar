@@ -13,8 +13,8 @@ function initMap(){
 		}
 	}
 
-	window.addEventListener("load", buscar);
-	
+	//window.addEventListener("load", buscar);
+
 	var latitud, longitud;
 
 	var funcionExito = function(posicion){
