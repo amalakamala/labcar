@@ -53,18 +53,18 @@ h1,h2,h3,h4,h5,h6{
 
 
 
-/*------------------- HEADER -------------------*/
+/*------------------- SECTION CONDUCTOR -------------------*/
 
 .conductor{
 	background-image: url(../img/taxi.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: bottom;	
+	background-position: bottom;
+    background-position-y: -1150px;		
 	padding: 100px 0;
-	text-align: button;
+	bottom: 30px;
 }
-
 .cuadro-a{
 	background-color: #f7b617;
 	height: 350px;
@@ -75,5 +75,92 @@ h1,h2,h3,h4,h5,h6{
 .cuadro-a h1{
 	font-size: 35px;
 	line-height: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
+
+.cuadro-a p{
+	font-size: 20px;
+	line-height: 40px;
+	padding-bottom: 20px;
+	font-weight: 200;
+}
+
+.cuadro-a p img{
+	width: 90px;
+}
+
+.cuadro-a h4{
+	font-size: 15px;	
+}
+
+.entrada-input{
+	display: inline-flex;
+	padding-top: 15px;
+}
+.entrada-input p{
+	font-size: 16px;
+}
+
+.input-style{
+	width: 150px;
+	margin: 0 20px;
+	height: 30px;
+	color: white;
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	border-bottom: 2px solid white;
+	border-radius: 0;
+}
+
+.form-contro{
+	border: 1px solid #f7b617;
+}
+
+.btn-conducir{
+	background-color: white;
+	color: #2b2b2b;
+}
+
+.btn-conducir:hover{
+	background-color: #EBEBEB;
+	color: #f7b617;
+}
+
+
+/*--- RESPONSIVE ---*/
+
+.conductor-taxi{
+	margin-right: 0;
+}
+
+.cuadro-b{
+    margin-top: 80px;
+	background-color: #f7b617;
+    height: 300px;
+	color: white;
+	padding: 70px 40px 50px 40px;	
+}
+
+
+/*------------------- SECTION APP -------------------*/
+
+.app{
+	background-color: #f7b617;
+	padding: 30px 200px 30px 0;
+}
+
+.el-app{
+	border: 1px solid white;
+	border-left: 0;
+}
+
+.app-caja{
+	padding: 30px;
+}
+
+
+.app-caja img{
+	width: 100%;
+}
+

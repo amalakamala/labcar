@@ -1,0 +1,13 @@
+@media (min-width: 1px) and (max-width: 768px){
+	.conductor{
+		background-position-y: 0;	
+	}
+
+	.app{
+		padding: 20px;
+	}
+
+	.el-app{
+		border: 1px solid white;
+	}
+}	
