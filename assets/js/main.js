@@ -7,30 +7,25 @@ function initMap(){
 		streetViewControl: true,
 	});
 
- 
-
-
-
 	function buscar(){
 		if(navigator.geolocation){
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
 		}
 	}
 
-	document.getElementById("encuentrame").addEventListener("click", buscar);
+	window.addEventListener("load", buscar);
+	
 	var latitud, longitud;
 
 	var funcionExito = function(posicion){
 		latitud = posicion.coords.latitude;
 		longitud = posicion.coords.longitude;
 
-		var image = 'assets/img/custom-bici.png';
-
 		var miUbicacion = new google.maps.Marker({
 			position: {lat:latitud, lng:longitud},
 			animation: google.maps.Animation.DROP,
 			map: map,
-			icon: image
+
 		});
 
 		map.setZoom(17);
