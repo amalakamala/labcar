@@ -72,7 +72,7 @@ function initMap(){
 	        }
 	    });
 	}	
-	
+
 	// onChangeHandler = Controlador de Cambios
 	directionsDisplay.setMap(map);
 	var onChangeHandler = function(){
@@ -80,5 +80,7 @@ function initMap(){
 	};  
 		
 	document.getElementById("ruta").addEventListener("click",onChangeHandler); 
+
 }
+
 

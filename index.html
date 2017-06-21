@@ -117,18 +117,18 @@
 					<p>Consulta las tarifas LabCar aquí</p>
 					<div>
 						<div class="el-input-mapa">
-							<span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+							<img src="assets/img/circulo.png" class="icono-input" alt="">
 
 							<input class="input-m" type="text" id="origen" placeholder="Ingrese punto de partida">
 						</div>
 						<div class="el-input-mapa">
-							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							<img src="assets/img/flecha.png" class="icono-input" alt="">
 							<input class="input-m" type="text" id="destino" placeholder=" Ingrese un destino">
 						</div>	
 						<div>
 							<button id="ruta" class="btn btn-default">¡TRAZAR RUTA!</button>
 						</div>
-						<div class="respuesta"></div>					
+						<div class="respuesta" id="output"></div>					
 						
 					</div>
 				</div>
@@ -153,11 +153,17 @@
 					<hr>
 				</div>				
 			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-3">
-					
+			<div class="row contenedor">
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs redes-s">
+					<div>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<i class="fa fa-apple" aria-hidden="true"></i>
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
 				</div>	
-				<div class="col-lg-3 col-md-3">
+				<div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 viaja-text">
 					<ul>
 						<li><a href="#">Viaja</a></li>
 						<li><a href="#">Conduce</a></li>
@@ -169,13 +175,38 @@
 						<li><a href="#">Seguridad</a></li>
 					</ul>
 				</div>	
-				<div class="col-lg-3 col-md-3">
-					
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs viaja-text">
+					<ul>
+						<li><a href="#">Oportunidades</a></li>
+						<li><a href="#">Nuestra historia</a></li>
+						<li><a href="#">API de LabCar</a></li>
+						<li><a href="#">Eventos</a></li>
+						<li><a href="#">Desarrolladores</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Laboratoria</a></li>
+						<li><a href="#">Coders</a></li>
+					</ul>				
 				</div>	
-				<div class="col-lg-3 col-md-3">
-					
+				<div class="col-lg-3 col-md-3 col-sm-5 col-xs-5">
+					<div class="hidden-lg hidden-md redes-s-2">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+						<i class="fa fa-apple" aria-hidden="true"></i>
+						<i class="fa fa-play" aria-hidden="true"></i>
+					</div>
+					<div class="logos">
+						<img src="assets/img/google-play.png" alt="">
+						<img src="assets/img/app-store.png" alt="">	
+					</div>
 				</div>																
-			</div>			
+			</div>	
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center footer-final">
+					<hr>
+					<p><i class="fa fa-copyright" aria-hidden="true"></i> LabCar technologies inc.</p>
+				</div>				
+			</div>		
 		</div>
 	</footer>
 

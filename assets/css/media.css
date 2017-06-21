@@ -48,4 +48,18 @@
 		line-height:20px;		
 	}
 
+	
+	.text-mapa{
+		padding-left: 50px;
+	}
+
+
+	.logos{
+		margin-top: 10px;
+	}
+	
+	.logos img{
+		width: 100%;
+	}
+	
 }	
