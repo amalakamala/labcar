@@ -77,19 +77,19 @@ h1,h2,h3,h4,h5,h6{
 	background-color: #f7b617;
 	height: 350px;
 	color: white;
-	padding: 20px 20px 50px 20px;
+	padding: 40px 20px 50px 40px;
 }
 
 .cuadro-a h1{
 	font-size: 35px;
 	line-height: 40px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 .cuadro-a p{
 	font-size: 20px;
 	line-height: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	font-weight: 200;
 }
 
@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
 
 .entrada-input{
 	display: inline-flex;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 .entrada-input p{
 	font-size: 16px;
