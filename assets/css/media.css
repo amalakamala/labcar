@@ -45,7 +45,7 @@
 
 	.negro{
 		background-color: rgba(0,0,0, 0.5);
-		height: 200px;
+		height: 195px;
 		padding: 20px 10px;
 	}
 
@@ -57,11 +57,24 @@
 	}
 
 
-	
+	/*------ MAPA ----------*/
+
 	.text-mapa{
-		padding-left: 50px;
+	    padding-left: 70px;
 	}
 
+	#ruta {
+	    margin-left: 40px;
+	}
+	.el-input-mapa input {
+    	width: 200px;
+	}
+
+	.costos {
+	    margin-left: 50px;
+	}
+
+	/*------ FOOTER ----------*/
 
 	.logos{
 		margin-top: 10px;

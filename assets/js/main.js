@@ -95,7 +95,7 @@ function initMap(){
 					var costoDistancia = (response.routes[0].legs[0].distance.value / 1000) * 500;
 					var laCaja = document.createElement("div");
 					laCaja.setAttribute("class","costos");
-					var valorCaja = document.createTextNode("$ " + costoDistancia);
+					var valorCaja = document.createTextNode("$  " + costoDistancia);
 					laCaja.appendChild(valorCaja);
 					distanceInput.appendChild(laCaja);
 				}
