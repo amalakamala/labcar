@@ -1,5 +1,13 @@
 @media (min-width: 1px) and (max-width: 768px){
 
+	.menu-nav{
+		display: none;
+	}
+
+	#nav li{
+		padding: 10px 0;
+	}
+
 	/*------SECTION CONDUCTOR --------*/
 
 	.conductor{
@@ -48,6 +56,7 @@
 		line-height:20px;		
 	}
 
+
 	
 	.text-mapa{
 		padding-left: 50px;
@@ -63,3 +72,9 @@
 	}
 	
 }	
+
+@media (min-width: 768px){
+	#nav{
+		display: none;
+	}
+}

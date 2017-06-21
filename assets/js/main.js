@@ -7,13 +7,15 @@ function initMap(){
 		streetViewControl: true,
 	});
 
+
+
 	function buscar(){
 		if(navigator.geolocation){
 			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
 		}
 	}
 
-	//window.addEventListener("load", buscar);
+	window.addEventListener("load", buscar);
 
 	var latitud, longitud;
 
@@ -53,6 +55,7 @@ function initMap(){
 	var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;
     	
+
 	//LLAMAR ID DE ENTRADAS	
 	document.getElementById('origen').addEventListener('change', onChangeHandler);
 	document.getElementById('destino').addEventListener('change', onChangeHandler);
@@ -73,14 +76,55 @@ function initMap(){
 	    });
 	}	
 
+
+	//function calcula distancia y presio
+	function calcRoute() {
+			var start = document.getElementById("origen").value;
+			var end = document.getElementById("destino").value;
+			var distanceInput = document.getElementById("output");
+			
+			var request = {
+				origin:start, 
+				destination:end,
+				travelMode: google.maps.DirectionsTravelMode.DRIVING
+			};
+			
+			directionsService.route(request, function(response, status) {
+				if (status == google.maps.DirectionsStatus.OK) {
+					directionsDisplay.setDirections(response);					
+					var costoDistancia = (response.routes[0].legs[0].distance.value / 1000) * 500;
+					var laCaja = document.createElement("div");
+					laCaja.setAttribute("class","costos");
+					var valorCaja = document.createTextNode("$ " + costoDistancia);
+					laCaja.appendChild(valorCaja);
+					distanceInput.appendChild(laCaja);
+				}
+			});
+	}
+
+
+
 	// onChangeHandler = Controlador de Cambios
 	directionsDisplay.setMap(map);
 	var onChangeHandler = function(){
 		carcularYTrazarRuta(directionsService, directionsDisplay);
+		calcRoute();
 	};  
 		
 	document.getElementById("ruta").addEventListener("click",onChangeHandler); 
 
 }
 
+
+
+
+//MENU MOVIL
+var menu = document.getElementById("menu");
+
+menu.addEventListener("click",function(){
+	var elnav = document.getElementById("nav");
+	elnav.classList.toggle("menu-nav");
+
+
+})
 
