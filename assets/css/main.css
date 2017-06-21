@@ -51,7 +51,15 @@ h1,h2,h3,h4,h5,h6{
 	height: 25px;
 }
 
+.nav>li>a {
+    padding: 10px 25px;
+    font-size: 14px;
+}
 
+.navbar-right {
+    padding-right: 30px;
+    padding-top: 10px;
+}
 
 /*------------------- SECTION CONDUCTOR -------------------*/
 
@@ -153,14 +161,80 @@ h1,h2,h3,h4,h5,h6{
 .el-app{
 	border: 1px solid white;
 	border-left: 0;
+	color: white;
 }
 
 .app-caja{
 	padding: 30px;
 }
 
-
 .app-caja img{
-	width: 100%;
+	width: 80%;
 }
 
+.text-app{
+	padding: 50px 15px 50px 50px;
+}
+
+.text-app h2{
+	font-size: 32px;
+	margin-bottom: 30px;
+	line-height:20px;	
+}
+
+.text-app p{
+	font-size: 18px;
+	line-height: 26px;	
+	font-weight: 200;
+	letter-spacing: 1px;	
+}
+
+.destino h2{
+	color: white;
+	padding: 20px 0 0 0;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+
+/*------------------- CONDUCE -------------------*/
+
+.conduce{
+	background-image: url(../img/conduce.jpg);
+	height: 70vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+
+.negro{
+	background-color: rgba(0,0,0, 0.5);
+	height: auto;
+	padding: 150px 30px;
+}
+
+.negro h2{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 30px;
+	line-height:20px;		
+}
+
+.negro p{
+	color: white;	
+	font-size: 16px;
+	font-weight: 200;		
+}
+
+.negro button{
+	background-color: #f7b617;
+	color: white;	
+	border: none;
+}
+
+/*------------------- MAPA -------------------*/
+.mapa{
+	background-color:  #f7b617;
+	padding: 30px 200px 30px 0;
+}

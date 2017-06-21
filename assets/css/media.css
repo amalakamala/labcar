@@ -1,7 +1,13 @@
 @media (min-width: 1px) and (max-width: 768px){
+
+	/*------SECTION CONDUCTOR --------*/
+
 	.conductor{
 		background-position-y: 0;	
 	}
+
+
+	/*------- SECTION APP ---------*/
 
 	.app{
 		padding: 20px;
@@ -10,4 +16,36 @@
 	.el-app{
 		border: 1px solid white;
 	}
+
+	.app-caja img{
+		margin-left: 30px;
+		padding: 10px 0 0 0;
+	}
+
+	.destino{
+		color: white;
+		font-size: 14px;
+		font-weight: 200;
+	}
+	/*------ SECTION CONDUCE --------*/
+
+	.conduce{
+		height: 30vh;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.negro{
+		background-color: rgba(0,0,0, 0.5);
+		height: 200px;
+		padding: 20px 10px;
+	}
+
+	.negro h2{
+		color: white;
+		font-size: 30px;
+		margin-bottom: 30px;
+		line-height:20px;		
+	}
+
 }	
