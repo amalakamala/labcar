@@ -112,14 +112,29 @@
 	<section class="mapa">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 ">
+				<div class="col-lg-6 col-md-6 text-mapa">
 					<h2>Tarifas</h2>
 					<p>Consulta las tarifas LabCar aquí</p>
-					<div></div>
+					<div>
+						<div>
+							<span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+
+							<input type="text" id="origen" placeholder="Ingrese punto de partida">
+						</div>
+						<div>
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+							<input type="text" id="destino" placeholder=" Ingrese un destino">
+						</div>						
+						
+					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 ">
-					
+				<div class="col-lg-6 col-md-6 el-mapa">
+					<div class="cuadrado-mapa">
+						<div class="img-mapa" id="map">
+						</div>
+					</div>
 				</div>
+
 			</div>
 		</div>		
 	</section>

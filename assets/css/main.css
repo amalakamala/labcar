@@ -236,5 +236,26 @@ h1,h2,h3,h4,h5,h6{
 /*------------------- MAPA -------------------*/
 .mapa{
 	background-color:  #f7b617;
+	padding: 50px;
+}
+
+.text-mapa{
+	padding: 30px 0 30px 200px;
+}
+
+.el-mapa{
 	padding: 30px 200px 30px 0;
 }
+
+.img-mapa{	
+	width: 100%;
+	height: 350px;
+	padding: 10px;
+}
+
+.cuadrado-mapa{
+	padding: 10px;
+	border: 1px solid white;
+
+}
+
